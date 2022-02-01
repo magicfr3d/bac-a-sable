@@ -1,0 +1,15 @@
+// Déclaration d'une mixin
+@mixin button($color, $background) {
+    color: $color;
+    background-color: $background;
+    border: 0.1rem solid $background;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    padding: 1rem;
+    display: inline-block;
+
+    &:hover {
+        color: $background;
+        background-color: transparent;
+    }
+}
